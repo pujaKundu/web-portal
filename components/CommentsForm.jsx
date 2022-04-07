@@ -79,7 +79,7 @@ const CommentsForm = ({ slug }) => {
         </div>
         <div className='grid grid-cols-1 gap-4 mb-4'>
           <div>
-            <input ref={storeDataEl} type="chechbox" id='storeData' name='storeData' value='true' />
+            <input ref={storeDataEl} type="checkbox" id='storeData' name='storeData' value='true' />
             <label className='text-gray-500 cursor-pointer ml-2' htmlFor="storeData">Save my email and name for next time I comment.</label>
           </div>
 

@@ -70,8 +70,8 @@ const PostDetail = ({ post }) => {
           />
         </div>
         <div className="px-4 lg:px-0">
-          <div className="mb-8 flex w-full items-center">
-            <div className="mb-4 mr-8 flex w-full items-center lg:mb-0 lg:w-auto">
+          <div className="mb-8 flex w-full items-center ">
+            <div className="mb-4 mr-8 flex w-full  items-center lg:mb-0 lg:w-auto">
               <img
                 height="30px"
                 width="30px"
@@ -101,15 +101,15 @@ const PostDetail = ({ post }) => {
               <span>{moment(post.createdAt).format('MMM DD, YYYY')}</span>
             </div>
           </div>
-            </div>
-            <h1 className='mb-8 text-3xl font-semibold'>{post.title}</h1>
-            {
-                post.content.raw.children.map((typeObj, index) => {
-                    const children = typeObj.children.map((item, itemIndex) => getContentFragment(itemIndex, item.text, item))
-                    
-                    return getContentFragment(index,children,typeObj,typeObj.type)
-                })
-            }
+        </div>
+        <h1 className="mb-8 text-3xl font-semibold">{post.title}</h1>
+        {post.content.raw.children.map((typeObj, index) => {
+          const children = typeObj.children.map((item, itemIndex) =>
+            getContentFragment(itemIndex, item.text, item)
+          )
+
+          return getContentFragment(index, children, typeObj, typeObj.type)
+        })}
       </div>
     )
 };

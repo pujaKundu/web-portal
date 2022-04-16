@@ -1,5 +1,5 @@
 # Web Portal
-Visit live site [Web POrtal](https://web-porta.vercel.app/)
+Visit live site [Web Portal](https://web-porta.vercel.app/)
 ## Technologies
 Next.js, GraphQL, Tailwind CSS
 

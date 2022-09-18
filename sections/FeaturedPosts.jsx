@@ -36,12 +36,12 @@
    }, [])
 
    const customLeftArrow = (
-     <div className="arrow-btn absolute left-0 cursor-pointer pl-2 rounded-full bg-violet-600 py-3 text-center">
+     <div className="arrow-btn absolute left-0 cursor-pointer rounded-full bg-violet-600 py-3 text-center">
        <svg
          xmlns="http://www.w3.org/2000/svg"
          className="h-6 w-6 w-full text-white"
          fill="none"
-         viewBox="0 0 24 24"
+         viewBox="0 0 18 25"
          stroke="currentColor"
        >
          <path
@@ -60,7 +60,7 @@
          xmlns="http://www.w3.org/2000/svg"
          className="h-6 w-6 w-full text-white"
          fill="none"
-         viewBox="0 0 24 24"
+         viewBox="0 0 18 25"
          stroke="currentColor"
        >
          <path
